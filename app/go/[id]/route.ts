@@ -27,7 +27,7 @@ export async function GET(
     p_listing_id: id,
     p_ip_hash:    ipHash,
     p_user_agent: req.headers.get('user-agent') ?? '',
-  }).then(() => {}).catch(() => {});
+  });
 
   let outbound: string;
   try {
